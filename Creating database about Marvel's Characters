@@ -1,0 +1,38 @@
+/* Create table about the people and what they do here */
+CREATE TABLE actors (id INTEGER PRIMARY KEY AUTOINCREMENT, 
+fullname TEXT,
+number_movies INTEGER,
+origin_country TEXT);
+
+CREATE TABLE movies (id INTEGER PRIMARY KEY AUTOINCREMENT,
+genre TEXT,
+title TEXT,
+release_date INTEGER);
+
+CREATE TABLE blockbusters (id INTEGER PRIMARY KEY AUTOINCREMENT,
+date NUMERIC,
+genre TEXT,
+title TEXT,
+revenue NUMERIC);
+
+INSERT INTO actors VALUES (1, "Robert_Downey_Jr", 10, "USA");
+INSERT INTO actors VALUES (2, "Chris_Evans", 10, "USA");
+INSERT INTO actors VALUES (3, "Scarlett_Johansson", 9, "USA");
+INSERT INTO actors VALUES (4, "Chris_Hemsworth", 9, "Australia");
+INSERT INTO actors VAlUES (5, "Tom_Holland", 6, "England");
+INSERT INTO actors VALUES (6, "Chris_Pratt", 6, "USA");
+
+INSERT INTO movies VALUES (1, "Superhero_fiction", "Avengers_Endgame", 2019);
+INSERT INTO movies VALUES (2, "Superhero_fiction", "The_Incredible_Hulk", 2008);
+INSERT INTO movies VALUES (3, "Superhero_fiction", "Guardians_of_the_galaxy", 2014);
+INSERT INTO movies VALUES (4, "Superhero_fiction", "Thor", 2011);
+INSERT INTO movies VALUES (5, "Superhero_fiction", "Spider_Man_No_way_home", 2021);
+INSERT INTO movies VALUES (6, "Superhero_fiction", "Iron_Man3", 2013);
+
+INSERT INTO blockbusters VALUES (1, 2019, "Superhero_fiction", "Avengers_Endgame", 858373000);
+INSERT INTO blockbusters VALUES (2, 2021, "Superhero_fiction", "Spider_man_No_Way_Home", 804793477);
+INSERT INTO blockbusters VALUES (3, 2018, "Superhero_fiction", "Black_Panther", 700059566);
+INSERT INTO blockbusters VALUES (4, 2018, "Superhero_fiction", "Avengers_Infinity_War", 678815482);
+INSERT INTO blockbusters VALUES (5, 2012, "Superhero_fiction", "The_Avengers", 623357910);
+INSERT INTO blockbusters VALUES (6, 2015, "Superhero_fiction", "Avengers_Age_Of_Ultron", 459005868)
+
