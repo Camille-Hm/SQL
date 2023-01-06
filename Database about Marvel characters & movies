@@ -36,3 +36,11 @@ INSERT INTO blockbusters VALUES (4, 2018, "Superhero_fiction", "Avengers_Infinit
 INSERT INTO blockbusters VALUES (5, 2012, "Superhero_fiction", "The_Avengers", 623357910);
 INSERT INTO blockbusters VALUES (6, 2015, "Superhero_fiction", "Avengers_Age_Of_Ultron", 459005868)
 
+/* Looking for max revenue on movies */
+SELECT MAX(revenue)
+FROM blockbusters;
+
+/* Ordering the movies in descending order */
+SELECT release_date
+FROM movies
+ORDER BY release_date desc;
